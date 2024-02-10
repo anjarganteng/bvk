@@ -3,10 +3,8 @@ Springboot Microservice BVK
 
 JDK 21
 
-Init data Table User
+Init data Table User :
 username : rey
-password : password
-username : axel
 password : password
 username : anjar
 password : password

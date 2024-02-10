@@ -64,3 +64,4 @@ INSERT INTO app_order_detail (id_order_detail, id_order, product_code, quantity,
 INSERT INTO app_order_detail (id_order_detail, id_order, product_code, quantity, price, discount, total_amount) VALUES (4, 3, 'I000001', 1, 5000000.0000, 0.0000, 5000000.0000);
 INSERT INTO app_order_detail (id_order_detail, id_order, product_code, quantity, price, discount, total_amount) VALUES (5, 3, 'I000002', 2, 6000000.0000, 500000.0000, 11500000.0000);
 INSERT INTO app_order_detail (id_order_detail, id_order, product_code, quantity, price, discount, total_amount) VALUES (6, 3, 'X000001', 1, 5000000.0000, 0.0000, 5000000.0000);
+
