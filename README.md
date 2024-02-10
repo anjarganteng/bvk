@@ -28,4 +28,3 @@ Swagger :
 1. User : http://localhost:8080/swagger-ui/index.html
 2. Inventory : http://localhost:8081/swagger-ui/index.html
 3. Order : http://localhost:8082/swagger-ui/index.html
-
