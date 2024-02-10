@@ -1,0 +1,508 @@
+{
+	"info": {
+		"_postman_id": "59a2f8f8-cb5f-46fc-8b47-1d1d00fb889e",
+		"name": "bvk",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6391782"
+	},
+	"item": [
+		{
+			"name": "auth/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\" : \"anjar\",\r\n    \"password\" : \"password\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/auth/v1/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth",
+						"v1",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user/add",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbmphciIsImVtYWlsIjoiYW5qYXJAZ21haWwuY29tIiwiZmlyc3RuYW1lIjoiR2luYW5qYXIiLCJsYXN0bmFtZSI6IlNhbmpheWEiLCJleHAiOjE5MjM1NjQ0Mzl9.SttEdZYoNKMqE8UPiIHROA3RVuystkWPJyfdbsczbck",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"putri\",\r\n    \"password\": \"$2a$10$e6Zmh5mkTffy6/hGNFjAnO0ZlDfDWd/baa/uRNgM9GzTl2eiFI2yG\",\r\n    \"firstname\": \"Atika\",\r\n    \"lastname\": \"Putri\",\r\n    \"email\": \"putri@gmail.com\",\r\n    \"phone\": \"081311114911\",\r\n    \"address\": \"Paradise Serpong City, Kawasan Adventures, Cluster Balmoral, J29/63 Kel. Babakan, Kec. Setu, Tangerang Selatan, Banten, 15315\",\r\n    \"createdDate\": \"2024-02-02T05:54:11.000+00:00\",\r\n    \"modifiedDate\": \"2024-02-02T05:54:11.000+00:00\",\r\n    \"active\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/user/v1/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"v1",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user/findById",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbmphciIsImVtYWlsIjoiYW5qYXJAZ21haWwuY29tIiwiZmlyc3RuYW1lIjoiR2luYW5qYXIiLCJsYXN0bmFtZSI6IlNhbmpheWEiLCJleHAiOjE5MjM1NjQ0Mzl9.SttEdZYoNKMqE8UPiIHROA3RVuystkWPJyfdbsczbck",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "putri",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/user/v1/findById",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"v1",
+						"findById"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user/findAll",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbmphciIsImVtYWlsIjoiYW5qYXJAZ21haWwuY29tIiwiZmlyc3RuYW1lIjoiR2luYW5qYXIiLCJsYXN0bmFtZSI6IlNhbmpheWEiLCJleHAiOjE5MjM1NjQ0Mzl9.SttEdZYoNKMqE8UPiIHROA3RVuystkWPJyfdbsczbck",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/user/v1/findAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"v1",
+						"findAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "product/add",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbmphciIsImVtYWlsIjoiYW5qYXJAZ21haWwuY29tIiwiZmlyc3RuYW1lIjoiR2luYW5qYXIiLCJsYXN0bmFtZSI6IlNhbmpheWEiLCJleHAiOjE5MjM2MDMyNjB9.I6XF_xu3t09jdPP3zmuhR8sOhrTFHuZszkymaoCdN98",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"productCode\": \"I000003\",\r\n  \"productName\": \"Iphone 15\",\r\n  \"price\": 5000000,\r\n  \"quantity\": 10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/inventory/v1/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"inventory",
+						"v1",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "product/findById",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbmphciIsImVtYWlsIjoiYW5qYXJAZ21haWwuY29tIiwiZmlyc3RuYW1lIjoiR2luYW5qYXIiLCJsYXN0bmFtZSI6IlNhbmpheWEiLCJleHAiOjE5MjM2MDI5NTZ9.xlnHyCpoZQ16mrgHNSyflB_fmP8xOtm93Wlh40rJtNM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "I000003",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/inventory/v1/findById",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"inventory",
+						"v1",
+						"findById"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "product/findAll",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbmphciIsImVtYWlsIjoiYW5qYXJAZ21haWwuY29tIiwiZmlyc3RuYW1lIjoiR2luYW5qYXIiLCJsYXN0bmFtZSI6IlNhbmpheWEiLCJleHAiOjE5MjM1NjQ0Mzl9.SttEdZYoNKMqE8UPiIHROA3RVuystkWPJyfdbsczbck",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/inventory/v1/findAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"inventory",
+						"v1",
+						"findAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "product/update",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbmphciIsImVtYWlsIjoiYW5qYXJAZ21haWwuY29tIiwiZmlyc3RuYW1lIjoiR2luYW5qYXIiLCJsYXN0bmFtZSI6IlNhbmpheWEiLCJleHAiOjE5MjM2MDMyNjB9.I6XF_xu3t09jdPP3zmuhR8sOhrTFHuZszkymaoCdN98",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"productCode\": \"I000003\",\r\n  \"productName\": \"Iphone 99\",\r\n  \"price\": 5000000,\r\n  \"quantity\": 10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/inventory/v1/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"inventory",
+						"v1",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "product/updateQuantity",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbmphciIsImVtYWlsIjoiYW5qYXJAZ21haWwuY29tIiwiZmlyc3RuYW1lIjoiR2luYW5qYXIiLCJsYXN0bmFtZSI6IlNhbmpheWEiLCJleHAiOjE5MjM2MDMyNjB9.I6XF_xu3t09jdPP3zmuhR8sOhrTFHuZszkymaoCdN98",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"productCode\": \"I000003\",\r\n  \"productName\": \"Iphone 11\",\r\n  \"price\": 5000000,\r\n  \"quantity\": 11\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/inventory/v1/update-quantity",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"inventory",
+						"v1",
+						"update-quantity"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "product/updateQuantityMany",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbmphciIsImVtYWlsIjoiYW5qYXJAZ21haWwuY29tIiwiZmlyc3RuYW1lIjoiR2luYW5qYXIiLCJsYXN0bmFtZSI6IlNhbmpheWEiLCJleHAiOjE5MjM2MDMyNjB9.I6XF_xu3t09jdPP3zmuhR8sOhrTFHuZszkymaoCdN98",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"productCode\": \"I000001\",\r\n        \"productName\": \"Iphone 11\",\r\n        \"price\": 5000000.00,\r\n        \"quantity\": 97\r\n    },\r\n    {\r\n        \"productCode\": \"I000002\",\r\n        \"productName\": \"Iphone 12 Pro\",\r\n        \"price\": 6000000.00,\r\n        \"quantity\": 98\r\n    },\r\n    {\r\n        \"productCode\": \"S000001\",\r\n        \"productName\": \"Samsung Galaxy S24\",\r\n        \"price\": 5000000.00,\r\n        \"quantity\": 99\r\n    }\r\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/inventory/v1/update-quantity-many",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"inventory",
+						"v1",
+						"update-quantity-many"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "product/checkQuantity",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbmphciIsImVtYWlsIjoiYW5qYXJAZ21haWwuY29tIiwiZmlyc3RuYW1lIjoiR2luYW5qYXIiLCJsYXN0bmFtZSI6IlNhbmpheWEiLCJleHAiOjE5MjM1ODcxNTZ9.2rgtOc4GrRR5GIXNG1eyGdtOxjarG7NenyydYAZYzyQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "I000003",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/inventory/v1/check-quantity",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"inventory",
+						"v1",
+						"check-quantity"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "order/findById",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbmphciIsImVtYWlsIjoiYW5qYXJAZ21haWwuY29tIiwiZmlyc3RuYW1lIjoiR2luYW5qYXIiLCJsYXN0bmFtZSI6IlNhbmpheWEiLCJleHAiOjE5MjM1NjQ0Mzl9.SttEdZYoNKMqE8UPiIHROA3RVuystkWPJyfdbsczbck",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "3",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/order/v1/findById",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"order",
+						"v1",
+						"findById"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "order/findAll",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbmphciIsImVtYWlsIjoiYW5qYXJAZ21haWwuY29tIiwiZmlyc3RuYW1lIjoiR2luYW5qYXIiLCJsYXN0bmFtZSI6IlNhbmpheWEiLCJleHAiOjE5MjM1NjQ0Mzl9.SttEdZYoNKMqE8UPiIHROA3RVuystkWPJyfdbsczbck",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/order/v1/findAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"order",
+						"v1",
+						"findAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "order/doOrder",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbmphciIsImVtYWlsIjoiYW5qYXJAZ21haWwuY29tIiwiZmlyc3RuYW1lIjoiR2luYW5qYXIiLCJsYXN0bmFtZSI6IlNhbmpheWEiLCJleHAiOjE5MjM1ODcxNTZ9.2rgtOc4GrRR5GIXNG1eyGdtOxjarG7NenyydYAZYzyQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idOrder\": 3,\r\n    \"username\": \"axel\",\r\n    \"orderDate\": \"2024-02-08T20:21:26.000+00:00\",\r\n    \"orderDetails\": [\r\n        {\r\n            \"idOrderDetail\": 99,\r\n            \"idOrder\": 3,\r\n            \"productCode\": \"X000001\",\r\n            \"quantity\": 1,\r\n            \"price\": 5000000.00,\r\n            \"discount\": 0.00,\r\n            \"totalAmount\": 5000000.00\r\n        },{\r\n            \"idOrderDetail\": 99,\r\n            \"idOrder\": 3,\r\n            \"productCode\": \"X000002\",\r\n            \"quantity\": 1,\r\n            \"price\": 5000000.00,\r\n            \"discount\": 0.00,\r\n            \"totalAmount\": 5000000.00\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8082/order/v1/do-order",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"order",
+						"v1",
+						"do-order"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
