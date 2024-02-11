@@ -3,11 +3,10 @@ Springboot Microservice BVK
 
 JDK 21
 
-Init data Table User :
-username : rey
-password : password
-username : anjar
-password : password
+Init data Table User 
+1. username: rey || password: password
+2. username: axel || password: password
+3. username: anjar || password: password
 
 Module :
 1. User (port: 8080)
