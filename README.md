@@ -16,7 +16,7 @@ Module :
 DB Admin H2 :
 1. User : http://localhost:8080/h2-console
 2. Inventory : http://localhost:8081/h2-console
-3. Order : http://localhost:8080/h2-console
+3. Order : http://localhost:8082/h2-console
 - JDBC Url : jdbc:h2:mem:app_microservice
 - user : root
 - password : root
