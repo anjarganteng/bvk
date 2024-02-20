@@ -1,5 +1,5 @@
 # bvk
-Springboot Microservice BVK
+Springboot Microservice BVK + H2 Database in memory
 
 JDK 21
 
